@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class="form">
+    <form>
+        {{ form.hidden_tag() }}
+        {{ form.question.label }}
+        {{ form.question }}
+        <br>
+        {{ form.submit }}
+    </form>
+</div>
+{% endblock %}
