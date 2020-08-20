@@ -12,6 +12,6 @@ def home():
 
 #route for generating random username + game
 @app.route('/username/game', methods = ['GET'])
-	username = requests.get('http://service2/user/randomname')
-	game = requests.get('http://service3/user/randomgame')
+	username = requests.get('http://service2:5001/user/randomname')
+	game = requests.get('http://service3:5002/user/randomgame')
 	return render_template('namegame.html', title='Username and Game', username=username.txt, game=game.txt)
