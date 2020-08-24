@@ -16,7 +16,7 @@ def game_prediction():
 	game_text = split_string[1]
 	user_number = username_text[-1]
 	if game_text == 'Mario Kart' and user_number == '9':
-		prediciton = "You will finish 9th on Kart"
+		predicition = "You will finish 9th on Kart"
 	elif game_text == 'Mario Kart' and user_number == '8':
 		predicition = "You will finish 8th on Kart"
 	elif game_text == 'Mario Kart' and user_number == '7':
@@ -36,7 +36,7 @@ def game_prediction():
 	elif game_text == 'Mario Kart' and user_number == '0':
 		predicition = "Just go outside today"
 	elif game_text == 'Tetris 99' and user_number == '9':
-		prediciton = "You will finish 9th on Tetris"
+		predicition = "You will finish 9th on Tetris"
 	elif game_text == 'Tetris 99' and user_number == '8':
 		predicition = "You will finish 8th on Tetris"
 	elif game_text == 'Tetris 99' and user_number == '7':
@@ -56,9 +56,9 @@ def game_prediction():
 	elif game_text == 'Tetris 99' and user_number == '0':
 		predicition = "Maybe you should take up knitting"
 	elif game_text == 'Monster Hunter Generations' and user_number == '9':
-		prediciton = "Save the monsters"
+		predicition = "Save the monsters"
 	elif game_text == 'Monster Hunter Generations' and user_number == '8':
-		predicition = "I wouldn't trust thoses villagers"
+		predicition = "I wouldn't trust those villagers"
 	elif game_text == 'Monster Hunter Generations' and user_number == '7':
 		predicition = "Maybe hunt a few monsters"
 	elif game_text == 'Monster Hunter Generations' and user_number == '6':
