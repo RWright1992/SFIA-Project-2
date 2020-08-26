@@ -2,13 +2,9 @@
 from flask import Response, request
 #importing app object from __init__.py
 from application import app
-#importing randint function from random module
-from random import randint
-#importing generate username function from random_username.generate module
-from random_username.generate import generate_username
 
 #creating route which will generate random username
-@app.route('/user/8ball', methods = ['GET','POST'])
+@app.route('/user/8ball', methods = ['POST'])
 def game_prediction():
 	name_game = request.data.decode('utf-8')
 	split_string = name_game.split(",")

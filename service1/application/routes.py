@@ -10,19 +10,6 @@ import requests
 def home():
 	return render_template('home.html', title='Home')
 
-'''
-#route for generating random username + game
-@app.route('/username/game', methods = ['GET'])
-def namegame():
-	username = requests.get('http://service2:5001/user/randomname')
-	game = requests.get('http://service3:5002/user/randomgame')
-	return render_template('namegame.html', title='Username and Game', username=username.text, game=game.text)
-'''
-'''
-@app.route('/username/prediction', methods = ['GET'])
-def prediction():
-	prediction = requests.get('http://service4:5003/user/8ball')
-'''
 
 #route for generating random username + game
 @app.route('/username/game1', methods = ['GET', 'POST'])
