@@ -2,24 +2,28 @@ version: '3.7'
 services:
   service1:
     build: ./service1
+    image: rwright1992/service1:v1
     ports:
       - target: 5000
         published: 5000
         protocol: tcp
   service2:
     build: ./service2
+    image: rwright1992/service2:v1
     ports:
       - target: 5001
         published: 5001
         protocol: tcp
   service3:
     build: ./service3
+    image: rwright1992/service3:v1
     ports:
       - target: 5002
         published: 5002
         protocol: tcp
   service4:
     build: ./service4
+    image: rwright1992/service4:v1
     ports:
       - target: 5003
         published: 5003

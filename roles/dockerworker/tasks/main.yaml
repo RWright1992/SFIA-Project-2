@@ -1,0 +1,6 @@
+- name: Add nodes
+  docker_swarm:
+    state: join
+    advertise_addr: 10.154.0.20:2377
+    join_token: SWMTKN-1-0cm5r0ra0xuxrmoufk3ceaiy9wixvc0jlq9q8lownwv5yt4ikw-cpnzr26pvh2d35taumcmbrzlf
+    remote_addrs: [ '10.154.0.44:2377' ]
