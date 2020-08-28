@@ -1,9 +1,3 @@
-'''
-- name: Init Swarm
-  docker_swarm:
-    state: present
-'''
-- name: download git repo
 - git:
     repo: https://github.com/RWright1992/SFIA-Project-2.git
     dest: /home/ryanwright1992/SFIA-2
