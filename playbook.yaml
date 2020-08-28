@@ -23,12 +23,12 @@
   roles:
   - role: dockermaster
 
-- hosts: dockermaster
-  become: yes
-  roles:
-  - role: dockerstackdeploy
-
 - hosts: dockerworker
   become: yes
   roles:
   - role: dockerworker
+
+- hosts: dockermaster
+  become: yes
+  roles:
+  - role: dockerstackdeploy
