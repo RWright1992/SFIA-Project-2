@@ -1,0 +1,4 @@
+- name: Remove worker from swarm
+  docker_swarm:
+    state: remove
+    node_id: sfia2-worker

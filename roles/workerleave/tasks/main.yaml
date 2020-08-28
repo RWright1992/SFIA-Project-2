@@ -1,0 +1,3 @@
+- name: Worker leave swarm
+  docker_swarm:
+    state: absent

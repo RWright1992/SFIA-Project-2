@@ -1,0 +1,4 @@
+- name: Drain worker node
+  docker_node:
+    hostname: sfia2-worker
+    availability: drain

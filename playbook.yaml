@@ -6,6 +6,21 @@
 - hosts: dockermaster
   become: yes
   roles:
+  - role: masterdrainworker
+
+- hosts: dockerworker
+  become: yes
+  roles:
+  - role: workerleave
+
+- hosts: dockermaster
+  become: yes
+  roles:
+  - role: masterrmworker
+
+- hosts: dockermaster
+  become: yes
+  roles:
   - role: dockermaster
 
 - hosts: dockerworker
