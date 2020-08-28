@@ -3,7 +3,7 @@ pipeline{
         stages{
         stage('Clone Repo'){
                 steps{
-                sh 'git clone -b dev https://github.com/RWright1992/SFIA-Project-2.git'
+                sh 'git fetch https://github.com/RWright1992/SFIA-Project-2.git dev'
                 }
         }
         stage('Install Pytest + Ansible'){
