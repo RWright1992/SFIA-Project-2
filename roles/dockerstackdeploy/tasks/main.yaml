@@ -1,0 +1,7 @@
+- name: Deploy stack from a compose file
+  docker_stack:
+    state: present
+    name: mystack
+    compose:
+      - /home/ryanwright1992/docker-compose.yaml
+
