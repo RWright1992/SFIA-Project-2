@@ -6,12 +6,11 @@ pipeline{
                 sh 'git fetch https://github.com/RWright1992/SFIA-Project-2.git dev'
                 }
         }
-        stage('Install Pytest + Ansible'){
+        stage('Install Pytest + Python'){
                 steps{
                 sh 'sudo apt update && sudo apt install -y python3 python3-pip'
                 sh 'pip3 install pytest'
                 sh 'pip3 install Flask-Testing'
-		sh 'pip3 install --user ansible'
                 }
         }
         stage(Test){
