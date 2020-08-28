@@ -2,23 +2,6 @@
   docker_swarm:
     state: present
 
-- name: pull service1
-  docker_image:
-    name: rwright1992/service1:v1
-    source: pull
-
-- name: pull service2
-  docker_image:
-    name: rwright1992/service2:v1
-    source: pull
-
-- name: pull service3
-  docker_image:
-    name: rwright1992/service3:v1
-    source: pull
-
-- name: pull service4
-  docker_image:
-    name: rwright1992/service4:v1
-    source: pull
-
+- git:
+    repo: https://github.com/RWright1992/SFIA-Project-2.git
+    dest: /home/ryanwright1992
