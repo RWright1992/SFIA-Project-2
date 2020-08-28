@@ -28,7 +28,7 @@ pipeline{
         }
         stage('Deploy'){
                 steps{
-                sh 'ansible-playbook -v -i inventory playbook.yaml'
+                sh 'ls'
                 }
         }
         }
