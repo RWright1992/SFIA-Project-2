@@ -11,7 +11,6 @@ pipeline{
                 sh 'sudo apt update && sudo apt install -y python3 python3-pip'
                 sh 'pip3 install pytest'
                 sh 'pip3 install Flask-Testing'
-		sh 'pip3 install ansible'
                 }
         }
         stage(Test){
