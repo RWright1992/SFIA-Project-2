@@ -39,3 +39,7 @@
 - name: 'Install docker'
   pip:
     name: docker
+
+- name: 'Install Jsondiff'
+  pip:
+    name: jsondiff

@@ -3,11 +3,6 @@
   roles:
   - role: int_installs
 
-- hosts: all
-  become: yes
-  roles:
-  - role: docker
-
 - hosts: dockermaster
   become: yes
   roles:
