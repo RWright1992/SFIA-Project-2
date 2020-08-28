@@ -29,7 +29,7 @@ pipeline{
         }
         stage('Deploy'){
                 steps{
-                sh 'cd SFIA-Project2 && ls'
+                sh 'ls'
                 }
         }
         }
