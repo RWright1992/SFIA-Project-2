@@ -3,5 +3,4 @@
     state: present
     name: mystack
     compose:
-      - /home/ryanwright1992/docker-compose.yaml
-
+      - /home/ryanwright1992/SFIA-2/SFIA-Project-2/docker-compose.yaml
