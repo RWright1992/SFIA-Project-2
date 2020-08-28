@@ -29,7 +29,7 @@ pipeline{
         }
         stage('Deploy'){
                 steps{
-                sh 'ls'
+                sh 'ansible-playbook -v -i inventory playbook.yaml'
                 }
         }
         }
