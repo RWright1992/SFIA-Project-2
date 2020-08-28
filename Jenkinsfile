@@ -28,6 +28,7 @@ pipeline{
         }
         stage('Deploy'){
                 steps{
+		sh '. ~/.bashrc'
 		sh 'echo ${PATH}'
                 sh 'ansible-playbook -v -i inventory playbook.yaml'
                 }
