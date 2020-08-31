@@ -134,7 +134,7 @@ Here is a screen shot from my Jenkins pipeline which is built from my Jenkinsfil
 
 Initially I had put the test stage after the Install docker stage however as the docker stage developed to push images to dockerhub I decided that the testing stage would be better carried out before the docker stage as it would not be good practise to push images to dockerhub which could potentially fail.
 
-![Jenkins Pipeline](images/jenkins2.png)
+![Jenkins Pipeline](images/Jenkins2.png)
 
 ## Deployment <a name="deployment"></a>
 
