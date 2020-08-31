@@ -16,7 +16,7 @@ pipeline{
         stage('Test app'){
                 steps{
                 sh 'cd SFIA-Project-2/service1 && pip3 install -r requirements.txt'
-                sh 'cd SFIA-Project-2/service1 && python3 -m pytest --cov application --cov-report term-missing'
+                sh 'cd SFIA-Project-2/service1 && python3 -m pytest'
                 sh 'cd ..'
                 sh 'cd SFIA-Project-2/service2 && pip3 install -r requirements.txt'
                 sh 'cd SFIA-Project-2/service2 && python3 -m pytest'
