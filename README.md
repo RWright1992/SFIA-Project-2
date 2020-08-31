@@ -5,6 +5,7 @@
 ### Resources
 * Jira: https://ryanwright.atlassian.net/jira/software/projects/M8B/boards/4
 * Application: http://35.246.50.113/ 
+* Dockerhub: https://hub.docker.com/u/rwright1992
 
 ### Brief
 
