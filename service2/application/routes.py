@@ -20,6 +20,6 @@ def user_name1():
 def user_name1():
 	usernumber = random.randint(0,9)
 	text = 'winner'
-	username = usernumber + text
+	username =  text + usernumber
 	return Response(username, mimetype='text/plain')
 
