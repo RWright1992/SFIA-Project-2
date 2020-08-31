@@ -16,14 +16,14 @@ pipeline{
         stage('Test app'){
                 steps{
                 sh 'cd SFIA-Project-2/service1 && pip3 install -r requirements.txt'
-                sh 'cd SFIA-Project-2/service1 && pytest --cov application --cov-report term-missing'
+                sh 'cd SFIA-Project-2/service1 && python3 pytest --cov application --cov-report term-missing'
                 sh 'cd ..'
                 sh 'cd SFIA-Project-2/service2 && pip3 install -r requirements.txt'
-                sh 'cd SFIA-Project-2/service2 && pytest --cov application --cov-report term-missing'
+                sh 'cd SFIA-Project-2/service2 && python3 pytest --cov application --cov-report term-missing'
                 sh 'cd ..'
-                sh 'cd SFIA-Project-2/service3 && pytest --cov application --cov-report term-missing'
+                sh 'cd SFIA-Project-2/service3 && python3 pytest --cov application --cov-report term-missing'
                 sh 'cd ..'
-                sh 'cd SFIA-Project-2/service4 && pytest --cov application --cov-report term-missing'
+                sh 'cd SFIA-Project-2/service4 && python3 pytest --cov application --cov-report term-missing'
                 }
         }
 	stage('Install docker + docker compose + build images + push'){
