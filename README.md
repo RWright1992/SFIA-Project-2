@@ -44,13 +44,13 @@ My initial thought to start off this application would be to build a magic 8 bal
 
 Below is a screenshot of my Jira board in the magic 8 ball stage.
 
-![Jira Original](images/Jira-Original.png)
+![Jira Original](images/Jira-Original.PNG)
 
 While thinking on the same lines of the 8 Ball I had decided a fortune teller would be allow me to work with a similar idea of the 8 ball I had previously designed while also meeting the project requirements. The new project direction would be a Video Game fortune teller that would make predictions based of a random username generated and from a random game generated from a list. This change in direction meant my previously written code could be refactored in my logic for service 4 with the if-else statement previously written.  
 
 Below is a screenshot of my Jira board after deciding on a video game fortune teller.
 
-![Jira New](images/Jira-24082020.png)
+![Jira New](images/Jira-24082020.PNG)
 
 My first steps now were to build services 1 2 & 3 so random objects could be created and the user would have an interface to use the application. 
 
@@ -74,7 +74,7 @@ This service will take the information sent by the post request in service 1 and
 
 Please find below a diagram marking out the processes behind the user journey:
 
-![User Journery](images/flowdiagram1.png)
+![User Journery](images/flowdiagram1.PNG)
 
 ## Risk Assessment <a name="riskassessment"></a>
 
@@ -86,7 +86,7 @@ https://docs.google.com/spreadsheets/d/1gG5lGN77Ml31YEPMjT5ALfbFS7uHnv1-dHHh0Syl
 
 Please find below an image of my CI pipeline:
 
-![CI Pipeline](images/CIpipeline.png)
+![CI Pipeline](images/CIpipeline.PNG)
 
 ## Application Front End <a name="frontend"></a>
 
