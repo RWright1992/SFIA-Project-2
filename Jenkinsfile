@@ -13,17 +13,7 @@ pipeline{
                 sh 'pip3 install Flask-Testing'
                 }
         }
-	stage('Install docker + docker compose + build images + push'){
-	steps{
-        	sh 'curl https://get.docker.com | sudo bash'
-		sh 'sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose'
-		sh 'sudo chmod +x /usr/local/bin/docker-compose'
-		sh 'cd SFIA-Project-2/'
-		sh 'sudo docker-compose build'
-		sh 'sudo docker-compose push'
-                }
-	}
-        stage(Test){
+        stage('Test app'){
                 steps{
                 sh 'cd SFIA-Project-2/service1 && pip3 install -r requirements.txt'
                 sh 'cd SFIA-Project-2/service1 && python3 -m pytest'
@@ -36,6 +26,16 @@ pipeline{
                 sh 'cd SFIA-Project-2/service4 && python3 -m pytest'
                 }
         }
+	stage('Install docker + docker compose + build images + push'){
+	steps{
+        	sh 'curl https://get.docker.com | sudo bash'
+		sh 'sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose'
+		sh 'sudo chmod +x /usr/local/bin/docker-compose'
+		sh 'cd SFIA-Project-2/'
+		sh 'sudo docker-compose build'
+		sh 'sudo docker-compose push'
+                }
+	}
         stage('Deploy'){
                 steps{
 		
