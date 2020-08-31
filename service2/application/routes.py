@@ -4,9 +4,20 @@ from flask import Response
 from application import app
 #importing generate username function from random_username.generate module
 from random_username.generate import generate_username
+#importing randint function from random module
+from random import randint
 
 #creating route which will generate random username
+'''
 @app.route('/user/randomname', methods = ['GET'])
 def user_name1():
 	username = generate_username()
 	return Response(username, mimetype='text/plain')
+'''
+#creating 2nd implementation for service 2 which will generate random number
+
+@app.route('/user/randomname', methods = ['GET'])
+def user_name1():
+	username = random.randint(0,9)
+	return Response(username, mimetype='text/plain')
+
