@@ -18,6 +18,8 @@ def user_name1():
 
 @app.route('/user/randomname', methods = ['GET'])
 def user_name1():
-	username = random.randint(0,9)
+	usernumber = random.randint(0,9)
+	text = 'winner'
+	username =  text + usernumber
 	return Response(username, mimetype='text/plain')
 
