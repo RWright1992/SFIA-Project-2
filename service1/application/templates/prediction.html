@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<h1>Username: {{ username }}</h1>
+<h1>Game: {{ game }}</h1>
+<h1>Fortune: {{ prediction }}</h1>
+<a href ='{{ url_for('home') }}'>Home page</a>
+{% endblock %}

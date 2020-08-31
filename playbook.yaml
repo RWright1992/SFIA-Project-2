@@ -1,0 +1,34 @@
+- hosts: all
+  become: yes
+  roles:
+  - role: int_installs
+
+- hosts: dockermaster
+  become: yes
+  roles:
+  - role: masterdrainworker
+
+- hosts: dockerworker
+  become: yes
+  roles:
+  - role: workerleave
+
+- hosts: dockermaster
+  become: yes
+  roles:
+  - role: masterrmworker
+
+- hosts: dockermaster
+  become: yes
+  roles:
+  - role: dockermaster
+
+- hosts: dockerworker
+  become: yes
+  roles:
+  - role: dockerworker
+
+- hosts: dockermaster
+  become: yes
+  roles:
+  - role: dockerstackdeploy
