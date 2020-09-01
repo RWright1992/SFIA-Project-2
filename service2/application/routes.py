@@ -8,14 +8,13 @@ from random_username.generate import generate_username
 from random import randint
 
 #creating route which will generate random username
-'''
 @app.route('/user/randomname', methods = ['GET'])
 def user_name1():
 	username = generate_username()
 	return Response(username, mimetype='text/plain')
-'''
-#creating 2nd implementation for service 2 which will generate random number
 
+#creating 2nd implementation for service 2 which will generate random number
+'''
 @app.route('/user/randomname', methods = ['GET'])
 def user_name1():
 	usernumber = randint(0,9)
@@ -23,4 +22,4 @@ def user_name1():
 	text = 'winner'
 	username =  text + usernumbertext
 	return Response(username, mimetype='text/plain')
-
+'''
