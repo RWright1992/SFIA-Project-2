@@ -7,7 +7,7 @@
 * Application: http://35.246.50.113/ 
 * Dockerhub: https://hub.docker.com/u/rwright1992
 
-### Brief
+### Brieff
 
 For our task we were set with the objective: 'Create an application that generates “Objects” upon a set of predefined rules.'
 
